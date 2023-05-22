@@ -1,20 +1,31 @@
 import Head from 'next/head';
+import Link from 'next/link';
+
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Parkys First Headless Website</title>
-        <meta name="description" content="Welcome to Parkys first headless website built with Next.js" />
+        <title>Parkys Second Website</title>
+        <meta name="description" content="Welcome to Parkys second website built with Next.js" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="container">
-        <h1 className="dark-blue">Parkys First Headless Website</h1>
-        <p>
-          Welcome to my first headless website! 
+        <h1 className="dark-blue">Parkys Second Website</h1>
+        
+          Welcome to my second website! 
           This site is very cool and everyone else is just jealous.
-        </p>
+
+          <h1 className="title">
+
+  <Link href="/posts/first-post">Test Link One Here!</Link> <br>
+  </br>
+  <Link href="/posts/contentful-test">Contentful Test Here!</Link>
+
+</h1>
+
+        
 
         <style jsx>{`
           .container {
@@ -46,3 +57,4 @@ export default function Home() {
     </div>
   );
 }
+
